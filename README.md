@@ -5,10 +5,10 @@
   </a>
 </p>
 <h1 align="center">
-  Neil's "Hello Tailwind" Starter
+  Built Using Neil's "Hello Tailwind" Starter
 </h1>
 
-Kick off your project with this hello-world boilerplate. It speeds up my process of developing a Gatsby site.
+Kick off your project with <a href="https://github.com/nmastroianni/hellotailwind">this hello-world boilerplate</a>. It speeds up my process of developing a Gatsby site.
 
 ## What Packages are Included?
 
