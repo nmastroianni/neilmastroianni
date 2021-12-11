@@ -1,8 +1,8 @@
 {
-  "name": "hello-tailwind",
+  "name": "neilmastroianni",
   "private": true,
-  "description": "A tailwindcss-based Gatsby hello-world starter",
-  "version": "0.1.0",
+  "description": "Neil Mastroianni: Perpetual Learner",
+  "version": "0.0.0",
   "license": "0BSD",
   "scripts": {
     "build": "gatsby clean && gatsby build",
