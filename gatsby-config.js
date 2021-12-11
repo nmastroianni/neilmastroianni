@@ -10,6 +10,7 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: "Your Site Title Goes Here",
+    siteUrl: "https://neilmastroianni.com"
   },
   plugins: [
     `gatsby-plugin-postcss`,
