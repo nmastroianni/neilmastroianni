@@ -4,7 +4,7 @@
   "description": "Neil Mastroianni: Perpetual Learner",
   "version": "0.0.0",
   "license": "0BSD",
-  "engines": {"node": ">=16.13.1"},
+  "engines": {"node": "=14.15.0"},
   "scripts": {
     "build": "gatsby clean && gatsby build",
     "develop": "gatsby develop",
