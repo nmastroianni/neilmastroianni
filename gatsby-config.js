@@ -27,5 +27,11 @@ module.exports = {
       },
       __key: `pages`,
     },
+    {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        url: `https://cms.neilmastroianni.com/graphql`,
+      },
+    },
   ],
 }

@@ -5,16 +5,18 @@
   "version": "0.0.0",
   "license": "0BSD",
   "scripts": {
-    "build": "gatsby clean && gatsby build",
+    "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run clean && npm run develop",
+    "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
     "@headlessui/react": "^1.4.2",
+    "@tailwindcss/aspect-ratio": "^0.4.0",
+    "@tailwindcss/typography": "^0.5.0",
     "autoprefixer": "^10.4.0",
     "gatsby": "^4.3.0",
     "gatsby-plugin-google-gtag": "^4.3.0",
@@ -24,6 +26,7 @@
     "gatsby-plugin-sharp": "^4.3.0",
     "gatsby-plugin-sitemap": "^5.3.0",
     "gatsby-source-filesystem": "^4.3.0",
+    "gatsby-source-wordpress": "^6.4.0",
     "gatsby-transformer-sharp": "^4.3.0",
     "postcss": "^8.4.4",
     "prettier": "^2.5.1",
