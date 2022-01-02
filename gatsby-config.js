@@ -9,8 +9,11 @@ const path = require("path")
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: "Your Site Title Goes Here",
-    siteUrl: "https://neilmastroianni.com"
+    siteTitle: "Neil Mastroianni",
+    siteUrl: "https://neilmastroianni.com/",
+    siteDescription:
+      "Neil Mastroianni, perpetual learner, educator, and father.",
+    siteImage: "",
   },
   plugins: [
     `gatsby-plugin-postcss`,
