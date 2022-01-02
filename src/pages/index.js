@@ -24,6 +24,11 @@ export default function Home() {
               <FaArrowDown className="mx-auto mb-4 md:mb-6 lg:mb-8 animate-bounce" />
               <ul className="grid grid-flow-col place-items-center">
                 <li className="inline">
+                  <a href="https://twitter.com/nmastroianni">
+                    <FaTwitter className="w-8 h-8" />
+                  </a>
+                </li>
+                <li className="inline">
                   <a href="https://www.linkedin.com/in/nmastroianni/">
                     <FaLinkedin className="w-8 h-8" />
                   </a>
@@ -31,11 +36,6 @@ export default function Home() {
                 <li className="inline">
                   <a href="https://github.com/nmastroianni">
                     <FaGithub className="w-8 h-8" />
-                  </a>
-                </li>
-                <li className="inline">
-                  <a href="https://twitter.com/nmastroianni">
-                    <FaTwitter className="w-8 h-8" />
                   </a>
                 </li>
               </ul>
