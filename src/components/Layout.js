@@ -18,7 +18,7 @@ export default function Layout({ children, path }) {
           </a>
         </li>
       </ul>
-      <div className="flex flex-col min-h-screen bg-slate-50 dark:bg-slate-800">
+      <div className="flex flex-col min-h-screen bg-slate-50 dark:bg-slate-900">
         <header className="">
           <Navbar />
         </header>

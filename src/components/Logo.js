@@ -10,7 +10,7 @@ export default function Logo() {
       strokeLinecap="square"
       strokeMiterlimit="10"
       xmlns="http://www.w3.org/2000/svg"
-      className="inline fill-sky-700 dark:fill-sky-300"
+      className="inline fill-sky-700 dark:fill-sky-200"
       style={{ maxHeight: "72px" }}
     >
       <clipPath id="p.0">
