@@ -1,4 +1,6 @@
 import * as React from "react"
+import Navbar from "./Navbar"
+import Footer from "./Footer"
 
 export default function Layout({ children, path }) {
   return (
@@ -16,10 +18,12 @@ export default function Layout({ children, path }) {
           </a>
         </li>
       </ul>
-      <div className="flex flex-col min-h-screen dark:bg-slate-800">
-        <header className="">HEADER</header>
+      <div className="flex flex-col min-h-screen bg-slate-50 dark:bg-slate-800">
+        <header className="">
+          <Navbar />
+        </header>
         <main id="main-content">{children}</main>
-        <footer className="mt-auto">FOOTER</footer>
+        <Footer />
       </div>
     </div>
   )
