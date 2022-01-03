@@ -2,6 +2,7 @@ import * as React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/Layout"
 import Pagination from "../components/Pagination"
+import BlogCard from "../components/BlogCard"
 
 const archiveTemplate = ({
   pageContext: { currentPage, numPages, catName, catUri },
@@ -18,6 +19,14 @@ const archiveTemplate = ({
           </h1>
         </div>
       )}
+
+      <ul>
+        {nodes.length
+          ? nodes.map(node => {
+              return <BlogCard key={node.id} data={node} />
+            })
+          : ""}
+      </ul>
       {numPages >= 1 && (
         <Pagination page={currentPage} totalPages={numPages} uri={catUri} />
       )}
