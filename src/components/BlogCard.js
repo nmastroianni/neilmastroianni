@@ -11,7 +11,7 @@ export default function BlogCard({ data }) {
             image={getImage(
               data.featuredImage.node.localFile.childImageSharp.gatsbyImageData
             )}
-            className="block mx-auto"
+            className="block mx-auto cursor-pointer"
             alt=""
             onClick={() => {
               navigate(`/blog${data.uri}`)
