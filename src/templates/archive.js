@@ -20,7 +20,7 @@ const archiveTemplate = ({
         </div>
       )}
 
-      <ul>
+      <ul className="max-w-xl mx-auto flex flex-col gap-3">
         {nodes.length
           ? nodes.map(node => {
               return <BlogCard key={node.id} data={node} />
