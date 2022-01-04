@@ -9,10 +9,10 @@ export default function Layout({ children, path }) {
         <li>
           <a
             href="#main-content"
-            className="absolute z-50 -top-20 sm:left-1/4 text-2xl  inline-block w-full sm:w-1/2 text-center bg-gray-900 bg-opacity-30 transform focus:translate-y-20 transition-all duration-500 ease-in-out"
+            className="dark:text-white absolute z-50 -top-20 sm:left-1/4 text-2xl  inline-block w-full sm:w-1/2 text-center bg-slate-900 bg-opacity-90 transform focus:translate-y-20 transition-all duration-500 ease-in-out"
           >
             Skip to main content{" "}
-            <span className="text-gray-800 px-3 py-0  text-base rounded-sm">
+            <span className="text-gray-800 dark:text-sky-50 px-3 py-0  text-base rounded-sm">
               Return
             </span>
           </a>
