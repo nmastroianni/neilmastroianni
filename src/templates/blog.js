@@ -2,13 +2,14 @@ import * as React from "react"
 import { Link, navigate, graphql } from "gatsby"
 import Layout from "../components/Layout"
 import BlogCard from "../components/BlogCard"
+import Pagination from "../components/Pagination"
 
 const blogTemplate = ({
+  pageContext: { uri, currentPage, numPages },
   data: {
     allWpPost: { nodes },
   },
 }) => {
-  console.log(nodes)
   return (
     <Layout>
       <h1>BLOG</h1>
@@ -19,6 +20,9 @@ const blogTemplate = ({
             })
           : ""}
       </ul>
+      {numPages >= 1 && (
+        <Pagination page={currentPage} totalPages={numPages} uri={uri} />
+      )}
     </Layout>
   )
 }

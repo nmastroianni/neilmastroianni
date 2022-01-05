@@ -16,7 +16,15 @@ export default function Pagination({ uri, page, totalPages }) {
       <div className="flex justify-evenly ">
         {page === 1 ? null : (
           <LinkButton
-            to={page === 2 ? `/blog${uri}` : `/blog${uri}${page - 1}`}
+            to={
+              page === 2
+                ? uri
+                  ? `/blog${uri}`
+                  : `/blog/`
+                : uri
+                ? `/blog${uri}${page - 1}`
+                : `/blog/${page - 1}`
+            }
             internal={true}
           >
             <HiArrowLeft className="inline mr-1 md:mr-2 lg:mr-3" />
@@ -24,7 +32,10 @@ export default function Pagination({ uri, page, totalPages }) {
           </LinkButton>
         )}
         {page === totalPages ? null : (
-          <LinkButton to={`/blog${uri}${page + 1}`} internal={true}>
+          <LinkButton
+            to={uri ? `/blog${uri}${page + 1}` : `/blog/${page + 1}`}
+            internal={true}
+          >
             Next
             <HiArrowRight className="inline ml-1 ml:mr-2 lg:ml-3" />
           </LinkButton>

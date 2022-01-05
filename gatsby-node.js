@@ -101,7 +101,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // create pages for each category
   categoryResult.data.allWpCategory.nodes.forEach(category => {
     const postsPerPage = categoryResult.data.wp.readingSettings.postsPerPage
-    console.log("^*^*^*^*", postsPerPage)
     const numberOfPosts = category.count
     const numPages = Math.ceil(numberOfPosts / postsPerPage)
     // some categories may be empty
