@@ -1,12 +1,24 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
+import { Link, navigate, graphql } from "gatsby"
 import Layout from "../components/Layout"
+import BlogCard from "../components/BlogCard"
 
-const blogTemplate = ({ data }) => {
-  console.log(data)
+const blogTemplate = ({
+  data: {
+    allWpPost: { nodes },
+  },
+}) => {
+  console.log(nodes)
   return (
     <Layout>
       <h1>BLOG</h1>
+      <ul className="max-w-xl mx-auto flex flex-col gap-3">
+        {nodes.length
+          ? nodes.map(node => {
+              return <BlogCard key={node.id} data={node} />
+            })
+          : ""}
+      </ul>
     </Layout>
   )
 }
